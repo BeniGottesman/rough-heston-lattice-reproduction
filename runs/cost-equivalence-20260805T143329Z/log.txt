@@ -1,0 +1,21 @@
+14:33:29 start cost-equivalence pid=79632
+14:33:29 phase 1/6: setup (total=6)
+14:33:44 phase 1 took 15s (15.00s)
+14:33:44 phase 2/6: sigma (total=6)
+14:34:37 phase 2 took 53s (53.06s)
+14:34:37 phase 3/6: reference (total=3)
+14:35:13 phase 3 took 36s (36.14s)
+14:35:13 phase 4/6: lattice (total=24)
+14:38:47 phase 4 took 3m33s (213.92s)
+14:38:47 phase 5/6: equiv (total=3)
+14:38:47 phase 5 took 0s (0.00s)
+14:38:47 phase 6/6: american (total=6)
+14:38:48 wrote RESULTS.md
+14:38:48 result n16_onestep_ratio_H0.05 = 0.1429739961895004
+14:38:48 result n16_onestep_nstar_H0.05 = 586.7459522330679
+14:38:48 result n16_onestep_ratio_H0.1 = 0.954880350461538
+14:38:48 result n16_onestep_nstar_H0.1 = 4321.253386746172
+14:38:48 result n16_onestep_ratio_H0.3 = 0.40403509679370897
+14:38:48 result n16_onestep_nstar_H0.3 = 2013.1924935891013
+14:38:48 phase 6 took 1s (0.54s)
+14:38:48 done in 5m18s (318.65s)

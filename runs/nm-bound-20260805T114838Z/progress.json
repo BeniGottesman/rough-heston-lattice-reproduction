@@ -1,0 +1,69 @@
+{
+  "name": "nm-bound",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/nm-bound-20260805T114838Z",
+  "status": "done",
+  "pid": 62514,
+  "phase_index": 0,
+  "total_phases": 5,
+  "phase": "variance",
+  "step": 12,
+  "total": 12,
+  "pct": 100.0,
+  "elapsed_s": 695.3,
+  "elapsed_human": "11m35s",
+  "eta_s": 3476.3,
+  "eta_human": "57m56s",
+  "started_at": "2026-08-05T11:48:38Z",
+  "updated_at": "2026-08-05T12:00:13Z",
+  "meta": {
+    "algo_version": "1.1.1",
+    "code_sha": "6b5cf0db492c"
+  },
+  "timings": [
+    {
+      "phase": "curves",
+      "index": 1,
+      "seconds": 599.54,
+      "human": "9m59s"
+    },
+    {
+      "phase": "mstar",
+      "index": 2,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "ratio",
+      "index": 3,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "epslaw",
+      "index": 4,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "variance",
+      "index": 5,
+      "seconds": 95.71,
+      "human": "1m35s"
+    }
+  ],
+  "phase_elapsed_s": 95.71,
+  "phase_elapsed_human": "1m35s",
+  "partial": {
+    "note": "H=0.3 n=128"
+  },
+  "results": {
+    "slope_3pct_best_H0.05": 0.41219858311113233,
+    "slope_3pct_best_H0.1": 0.41219858311113233,
+    "slope_3pct_best_H0.2": 0.25762411444445754,
+    "slope_3pct_best_H0.3": 0.20609929155556597,
+    "wobbles": 0,
+    "_total_seconds": 695.26,
+    "_total_human": "11m35s"
+  },
+  "error": null
+}

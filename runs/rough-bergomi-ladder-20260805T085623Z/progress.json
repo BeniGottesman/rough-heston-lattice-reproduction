@@ -1,0 +1,87 @@
+{
+  "name": "rough-bergomi-ladder",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/rough-bergomi-ladder-20260805T085623Z",
+  "status": "done",
+  "pid": 51203,
+  "phase_index": 0,
+  "total_phases": 4,
+  "phase": "3. H = 0.3",
+  "step": 6,
+  "total": 6,
+  "pct": 100.0,
+  "elapsed_s": 352.1,
+  "elapsed_human": "5m52s",
+  "eta_s": 1408.3,
+  "eta_human": "23m28s",
+  "started_at": "2026-08-05T08:56:23Z",
+  "updated_at": "2026-08-05T09:02:15Z",
+  "meta": {
+    "model": "rough Bergomi (in the paper's class; no closed form)",
+    "reference": "exact-covariance-driver Monte-Carlo, eta=0 control variate",
+    "H_values": [
+      0.05,
+      0.1,
+      0.3
+    ],
+    "n_values": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "eta": 0.3,
+    "rho": -0.7,
+    "mc_paths": 2000000,
+    "note": "sigma_y=1 so the driver walk has no drift, so the divergence is the recombining-lattice inconsistency (variance ratio 2H n^(1-2H)), not the F058 Lamperti-drift loss"
+  },
+  "timings": [
+    {
+      "phase": "0. reference sanity (eta=0 control = Black-Scholes)",
+      "index": 1,
+      "seconds": 27.35,
+      "human": "27s"
+    },
+    {
+      "phase": "1. H = 0.05",
+      "index": 2,
+      "seconds": 111.5,
+      "human": "1m51s"
+    },
+    {
+      "phase": "2. H = 0.1",
+      "index": 3,
+      "seconds": 108.82,
+      "human": "1m48s"
+    },
+    {
+      "phase": "3. H = 0.3",
+      "index": 4,
+      "seconds": 104.39,
+      "human": "1m44s"
+    }
+  ],
+  "phase_elapsed_s": 104.39,
+  "phase_elapsed_human": "1m44s",
+  "partial": {},
+  "results": {
+    "mc_price_H0.05": 11.82842610530982,
+    "mc_band_H0.05": 0.0033451289438697312,
+    "tree_error_n128_H0.05": 0.08437842567773046,
+    "variance_ratio_n128_H0.05": 7.879324245407465,
+    "rank_corr_ratio_error_H0.05": 0.7,
+    "mc_price_H0.1": 11.792708858130997,
+    "mc_band_H0.1": 0.0031386010413813068,
+    "tree_error_n128_H0.1": 0.1910039126242964,
+    "variance_ratio_n128_H0.1": 9.700586025666551,
+    "rank_corr_ratio_error_H0.1": 0.8999999999999998,
+    "mc_price_H0.3": 11.758936446794113,
+    "mc_band_H0.3": 0.0026066365329845257,
+    "tree_error_n128_H0.3": 0.09975562643009894,
+    "variance_ratio_n128_H0.3": 4.178642703821396,
+    "rank_corr_ratio_error_H0.3": 0.39999999999999997,
+    "_total_seconds": 352.07,
+    "_total_human": "5m52s"
+  },
+  "error": null
+}

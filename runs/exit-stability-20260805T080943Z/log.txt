@@ -1,0 +1,25 @@
+08:09:43 start exit-stability pid=47914
+08:09:43 phase 1/6: the coupling is valid (total=3)
+08:10:36 result dds_identity_bias_over_sqrt_du = [1.027, 0.807, 0.835]
+08:10:36 result dds_identity_finest_bias_sigma = 1.43
+08:10:36 phase 1 took 53s (53.43s)
+08:10:36 phase 2/6: the two rates, and the input (total=5)
+08:11:26 result slope_L2_dnu = 0.5013
+08:11:26 result slope_L2_dw = 0.27
+08:11:26 result slope_L2_dw_perp = 0.2641
+08:11:26 phase 2 took 50s (49.67s)
+08:11:26 phase 3/6: the input: the coefficient perturbation (total=1)
+08:11:26 result slope_sigma_deviation = 0.4976
+08:11:26 phase 3 took 0s (0.00s)
+08:11:26 phase 4/6: the exit positions coincide (total=1)
+08:11:26 result max_exit_position_mismatch = 0.0
+08:11:26 phase 4 took 0s (0.00s)
+08:11:26 phase 5/6: the drift, paired (total=4)
+08:13:08 result drift_paired_worst_abs_t = 0.81
+08:13:08 result drift_effect_constant_bound_over_sqrt_delta = 0.0127
+08:13:08 phase 5 took 1m41s (101.87s)
+08:13:08 phase 6/6: the margin in gamma (total=1)
+08:13:08 result gamma_margin_at_H_0.1 = 0.2
+08:13:08 wrote RESULTS.md
+08:13:08 phase 6 took 0s (0.00s)
+08:13:08 done in 3m24s (204.98s)

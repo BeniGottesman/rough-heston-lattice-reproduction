@@ -1,0 +1,5 @@
+# Build products of this package.
+sim/cpp/build/
+__pycache__/
+*.pyc
+.venv/

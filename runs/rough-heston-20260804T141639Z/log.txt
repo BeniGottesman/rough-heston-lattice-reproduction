@@ -1,0 +1,22 @@
+14:16:39 start rough-heston pid=33530
+14:16:39 phase 1/5: exact controls (total=12)
+14:16:42 result phase1_controls = {'bs_collapse': [{'V0': 0.04, 'fourier': 7.965567455631756, 'exact': 7.965567455405804, 'abs_err': 2.2595258997171186e-10}, {'V0': 0.09, 'fourier': 11.923538474273073, 'exact': 11.923538474048499, 'abs_err': 2.2457413706433726e-10}, {'V0': 0.25, 'fourier': 19.74126513680487, 'exact': 19.741265136584744, 'abs_err': 2.2012613953847904e-10}], 'martingale': [{'H': 0.05, 'phi0_err': np.float64(0.0), 'phi_minus_i_err': np.float64(0.0)}, {'H': 0.1, 'phi0_err': np.float64(0.0), 'phi_minus_i_err': np.float64(0.0)}, {'H': 0.3, 'phi0_err': np.float64(0.0), 'phi_minus_i_err': np.float64(0.0)}, {'H': 0.45, 'phi0_err': np.float64(0.0), 'phi_minus_i_err': np.float64(0.0)}], 'deterministic_variance': [{'H': 0.05, 'exact': 14.200811141150666, 'integrated_variance': 0.12806519738691213, 'err_200': 0.0003728281224368857, 'err_400': 0.00012373771482998563, 'err_800': 4.0512753244570376e-05, 'observed_order': 1.6, 'predicted_order_min2_1plusalpha': 1.55}, {'H': 0.1, 'exact': 14.17909844489877, 'integrated_variance': 0.12766968957966737, 'err_200': 0.0002680904889871272, 'err_400': 8.635473628260115e-05, 'err_800': 2.7449991705452703e-05, 'observed_order': 1.64, 'predicted_order_min2_1plusalpha': 1.6}, {'H': 0.2, 'exact': 14.13301715554556, 'integrated_variance': 0.12683238653278572, 'err_200': 0.00013965779508851028, 'err_400': 4.226527573791827e-05, 'err_800': 1.2634079652684704e-05, 'observed_order': 1.73, 'predicted_order_min2_1plusalpha': 1.7}, {'H': 0.3, 'exact': 14.082361812948953, 'integrated_variance': 0.12591525116212643, 'err_200': 7.312420004979003e-05, 'err_400': 2.073904280308625e-05, 'err_800': 5.81569710078611e-06, 'observed_order': 1.83, 'predicted_order_min2_1plusalpha': 1.8}, {'H': 0.45, 'exact': 13.994776679348234, 'integrated_variance': 0.12433758415709895, 'err_200': 2.7915846644077646e-05, 'err_400': 7.170943590040224e-06, 'err_800': 1.8238699226458266e-06, 'observed_order': 1.97, 'predicted_order_min2_1plusalpha': 1.95}]}
+14:16:42 phase 1 took 4s (3.93s)
+14:16:42 phase 2/5: the reference's own accuracy (total=12)
+14:16:43 FAILED FloatingPointError: Riccati blew up: reduce nu or increase steps
+Traceback (most recent call last):
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/run_rough_heston.py", line 278, in main
+    r2 = phase2(pr); pr.result("phase2_reference_accuracy", r2)
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/run_rough_heston.py", line 106, in phase2
+    v, sec = timed(fourier, 0.10, st)
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/run_rough_heston.py", line 62, in timed
+    out = fn(*a, **k)
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/run_rough_heston.py", line 56, in fourier
+    return rh.put_fourier(H, p["V0"], p["theta"], p["lam"], p["nu"], p["rho"],
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/rough_heston.py", line 172, in put_fourier
+    phi = char_fn(u - 0.5j, H, V0, theta, lam, nu, rho, T, steps)
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/rough_heston.py", line 152, in char_fn
+    return np.exp(theta * lam * int_h + V0 * _int_F(f, dt))
+  File "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/sim/rough_heston.py", line 141, in _int_F
+    raise FloatingPointError("Riccati blew up: reduce nu or increase steps")
+FloatingPointError: Riccati blew up: reduce nu or increase steps

@@ -1,0 +1,230 @@
+{
+  "name": "validation",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/validation-20260804T111030Z",
+  "status": "done",
+  "pid": 21446,
+  "phase_index": 4,
+  "total_phases": 4,
+  "phase": "V13b rough Bergomi WITH the admissible barrier",
+  "step": 5,
+  "total": 5,
+  "pct": 100.0,
+  "elapsed_s": 2.7,
+  "elapsed_human": "3s",
+  "eta_s": 0.0,
+  "eta_human": "0s",
+  "started_at": "2026-08-04T11:10:30Z",
+  "updated_at": "2026-08-04T11:10:32Z",
+  "meta": {
+    "example": "fractional driver + constant-vol American put",
+    "T": 1.0,
+    "S0": 100.0,
+    "K": 100.0,
+    "sigma": 0.3,
+    "rho": -0.7,
+    "eta_phase3": 0.3,
+    "zmax_asymptotic_4point": 2.658,
+    "zmax_asymptotic_9point_Thm9.1": 5.317,
+    "zmax_used_fixed_across_n": 1.877,
+    "zmax_used_in_sd_of_zeta_T": 0.84
+  },
+  "partial": {
+    "note": "n=128",
+    "slope_H0.10": 0.8,
+    "slope_H0.20": 0.6,
+    "slope_H0.30": 0.4,
+    "slope_H0.40": 0.2,
+    "inner": "n=128 k=0",
+    "put_n8": 12.0012,
+    "err_n8": 0.3639,
+    "put_n16": 12.4164,
+    "err_n16": 0.18365,
+    "put_n32": 12.697,
+    "err_n32": 0.09216,
+    "put_n64": 12.8913,
+    "err_n64": 0.0461,
+    "put_n128": 13.0262,
+    "err_n128": 0.023,
+    "put_n256": 11.912,
+    "err_n256": 0.01143,
+    "viol_n8": 0,
+    "viol_n16": 0,
+    "viol_n32": 0,
+    "viol_n64": 0,
+    "viol_n128": 0
+  },
+  "results": {
+    "phase1_V1_V2": {
+      "H=0.10": {
+        "slope_ratio_onestep_vs_n": 0.8,
+        "predicted_slope_1_minus_2H": 0.8,
+        "ratio_exact_at_n4096": 0.8319,
+        "ratio_onestep_at_n4096": 155.21,
+        "cov_exact_far_over_true": 0.964,
+        "cov_exact_near_over_true": 0.887,
+        "cov_onestep_far_over_near": 1.0,
+        "cov_true_far_over_near": 0.292
+      },
+      "H=0.20": {
+        "slope_ratio_onestep_vs_n": 0.6,
+        "predicted_slope_1_minus_2H": 0.6,
+        "ratio_exact_at_n4096": 0.972,
+        "ratio_onestep_at_n4096": 58.81,
+        "cov_exact_far_over_true": 0.981,
+        "cov_exact_near_over_true": 0.947,
+        "cov_onestep_far_over_near": 1.0,
+        "cov_true_far_over_near": 0.436
+      },
+      "H=0.30": {
+        "slope_ratio_onestep_vs_n": 0.4,
+        "predicted_slope_1_minus_2H": 0.4,
+        "ratio_exact_at_n4096": 0.9954,
+        "ratio_onestep_at_n4096": 16.71,
+        "cov_exact_far_over_true": 0.991,
+        "cov_exact_near_over_true": 0.979,
+        "cov_onestep_far_over_near": 1.0,
+        "cov_true_far_over_near": 0.603
+      },
+      "H=0.40": {
+        "slope_ratio_onestep_vs_n": 0.2,
+        "predicted_slope_1_minus_2H": 0.2,
+        "ratio_exact_at_n4096": 0.9993,
+        "ratio_onestep_at_n4096": 4.22,
+        "cov_exact_far_over_true": 0.996,
+        "cov_exact_near_over_true": 0.993,
+        "cov_onestep_far_over_near": 1.0,
+        "cov_true_far_over_near": 0.791
+      },
+      "mc_check_H0.10_n256": {
+        "mc_var_exact": 3.503406,
+        "closed_form_exact": 3.53811,
+        "mc_var_onestep": 83.477421,
+        "closed_form_onestep": 84.448506
+      }
+    },
+    "crr_reference_n20000": 11.923389,
+    "phase2_V3_V8": {
+      "reference_crr": 11.923389,
+      "rows": [
+        {
+          "n": 8,
+          "lattice": 11.559493,
+          "abs_err": 0.363897,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        },
+        {
+          "n": 16,
+          "lattice": 11.739737,
+          "abs_err": 0.183652,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        },
+        {
+          "n": 32,
+          "lattice": 11.831232,
+          "abs_err": 0.092157,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        },
+        {
+          "n": 64,
+          "lattice": 11.877289,
+          "abs_err": 0.046101,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        },
+        {
+          "n": 128,
+          "lattice": 11.90039,
+          "abs_err": 0.022999,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        },
+        {
+          "n": 256,
+          "lattice": 11.911959,
+          "abs_err": 0.011431,
+          "prob_violations": 0,
+          "max_violation": 0.0
+        }
+      ],
+      "observed_error_slope_in_delta": 0.999
+    },
+    "phase3a_no_barriers": {
+      "zmax": null,
+      "values": {
+        "8": 11.661999,
+        "16": 11.626183,
+        "32": 10.7596,
+        "64": 6.530714,
+        "128": 0.713493
+      },
+      "prob_violations": {
+        "8": 546,
+        "16": 5266,
+        "32": 43930,
+        "64": 351894,
+        "128": 2783030
+      },
+      "successive_diffs": [
+        [
+          8,
+          0.035817
+        ],
+        [
+          16,
+          0.866583
+        ],
+        [
+          32,
+          4.228886
+        ],
+        [
+          64,
+          5.817222
+        ]
+      ],
+      "observed_rate_r": -2.432,
+      "theoretical_H_over_2": 0.05
+    },
+    "phase3b_with_barriers": {
+      "zmax": 1.877,
+      "values": {
+        "8": 12.001208,
+        "16": 12.416449,
+        "32": 12.696974,
+        "64": 12.891303,
+        "128": 13.026175
+      },
+      "prob_violations": {
+        "8": 0,
+        "16": 0,
+        "32": 0,
+        "64": 0,
+        "128": 0
+      },
+      "successive_diffs": [
+        [
+          8,
+          0.415242
+        ],
+        [
+          16,
+          0.280525
+        ],
+        [
+          32,
+          0.194329
+        ],
+        [
+          64,
+          0.134872
+        ]
+      ],
+      "observed_rate_r": 0.54,
+      "theoretical_H_over_2": 0.05
+    }
+  },
+  "error": null
+}

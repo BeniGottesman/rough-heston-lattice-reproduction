@@ -1,0 +1,14 @@
+09:20:52 start routeb-compare pid=53103
+09:20:52 phase 1/4: 0. driver variance ratio (analytic, exact) (total=3)
+09:20:53 result vr_onestep_n512_H0.05 = 27.437400640929113
+09:20:53 result vr_lift_m1_n512_H0.05 = 0.16605577920291723
+09:20:53 result vr_lift_m2_n512_H0.05 = 0.2847274844979274
+09:20:54 result vr_onestep_n512_H0.1 = 29.406677887924104
+09:20:54 result vr_lift_m1_n512_H0.1 = 0.3002607684024787
+09:20:54 result vr_lift_m2_n512_H0.1 = 0.4653866137918285
+09:20:55 result vr_onestep_n512_H0.3 = 7.275439519249911
+09:20:55 result vr_lift_m1_n512_H0.3 = 0.6931490500684537
+09:20:55 result vr_lift_m2_n512_H0.3 = 0.8170983551677888
+09:20:55 phase 1 took 3s (3.29s)
+09:20:55 phase 2/4: 1. H = 0.05: prices (total=12)
+09:21:25 result mc_H0.05 = 11.82842610530982

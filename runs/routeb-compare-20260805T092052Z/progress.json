@@ -1,0 +1,58 @@
+{
+  "name": "routeb-compare",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/routeb-compare-20260805T092052Z",
+  "status": "running",
+  "pid": 53103,
+  "phase_index": 2,
+  "total_phases": 4,
+  "phase": "1. H = 0.05: prices",
+  "step": 11,
+  "total": 12,
+  "pct": 91.7,
+  "elapsed_s": 245.7,
+  "elapsed_human": "4m05s",
+  "eta_s": 267.8,
+  "eta_human": "4m27s",
+  "started_at": "2026-08-05T09:20:52Z",
+  "updated_at": "2026-08-05T09:24:58Z",
+  "meta": {
+    "model": "rough Bergomi",
+    "eta": 0.3,
+    "rho": -0.7,
+    "T": 1.0,
+    "H_values": [
+      0.05,
+      0.1,
+      0.3
+    ],
+    "mc_paths": 2000000,
+    "pricers": "one-step (route_aprime), lift (LiftedLattice), reference (exact-covariance MC)",
+    "what": "does the Markovian lift remove the one-step lattice's variance divergence"
+  },
+  "timings": [
+    {
+      "phase": "0. driver variance ratio (analytic, exact)",
+      "index": 1,
+      "seconds": 3.29,
+      "human": "3s"
+    }
+  ],
+  "phase_elapsed_s": 242.45,
+  "phase_elapsed_human": "4m02s",
+  "partial": {
+    "inner": "lift m=2 n=32 75s"
+  },
+  "results": {
+    "vr_onestep_n512_H0.05": 27.437400640929113,
+    "vr_lift_m1_n512_H0.05": 0.16605577920291723,
+    "vr_lift_m2_n512_H0.05": 0.2847274844979274,
+    "vr_onestep_n512_H0.1": 29.406677887924104,
+    "vr_lift_m1_n512_H0.1": 0.3002607684024787,
+    "vr_lift_m2_n512_H0.1": 0.4653866137918285,
+    "vr_onestep_n512_H0.3": 7.275439519249911,
+    "vr_lift_m1_n512_H0.3": 0.6931490500684537,
+    "vr_lift_m2_n512_H0.3": 0.8170983551677888,
+    "mc_H0.05": 11.82842610530982
+  },
+  "error": null
+}

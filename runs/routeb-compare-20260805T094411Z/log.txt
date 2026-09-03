@@ -1,0 +1,32 @@
+09:44:11 start routeb-compare pid=54925
+09:44:11 phase 1/4: 0. driver variance ratio (analytic, exact) (total=3)
+09:44:12 result vr_onestep_n512_H0.05 = 27.437400640929113
+09:44:12 result vr_lift_m1_n512_H0.05 = 0.16605577920291723
+09:44:12 result vr_lift_m2_n512_H0.05 = 0.2847274844979274
+09:44:13 result vr_onestep_n512_H0.1 = 29.406677887924104
+09:44:13 result vr_lift_m1_n512_H0.1 = 0.3002607684024787
+09:44:13 result vr_lift_m2_n512_H0.1 = 0.4653866137918285
+09:44:14 result vr_onestep_n512_H0.3 = 7.275439519249911
+09:44:14 result vr_lift_m1_n512_H0.3 = 0.6931490500684537
+09:44:15 result vr_lift_m2_n512_H0.3 = 0.8170983551677888
+09:44:15 phase 1 took 3s (3.37s)
+09:44:15 phase 2/4: 1. H = 0.05: prices (total=11)
+09:44:44 result mc_H0.05 = 11.82842610530982
+09:48:03 result onestep_err_n128_H0.05 = 0.08437842567773046
+09:48:03 result lift_m1_err_n128_H0.05 = -0.15430929133100513
+09:48:03 result lift_m2_err_n32_H0.05 = -0.1370448262729802
+09:48:03 phase 2 took 3m48s (228.23s)
+09:48:03 phase 3/4: 2. H = 0.1: prices (total=11)
+09:48:40 result mc_H0.1 = 11.792708858130997
+09:55:26 result onestep_err_n128_H0.1 = 0.1910039126242964
+09:55:26 result lift_m1_err_n128_H0.1 = -0.09255425179450683
+09:55:26 result lift_m2_err_n32_H0.1 = -0.07637260697241466
+09:55:26 phase 3 took 7m23s (443.16s)
+09:55:26 phase 4/4: 3. H = 0.3: prices (total=11)
+09:56:03 result mc_H0.3 = 11.758936446794113
+10:03:22 result onestep_err_n128_H0.3 = 0.09975562643009894
+10:03:22 result lift_m1_err_n128_H0.3 = -0.006691690581714482
+10:03:22 result lift_m2_err_n32_H0.3 = 0.008628708511604799
+10:03:22 wrote RESULTS.md
+10:03:22 phase 4 took 7m55s (475.97s)
+10:03:22 done in 19m10s (1150.73s)

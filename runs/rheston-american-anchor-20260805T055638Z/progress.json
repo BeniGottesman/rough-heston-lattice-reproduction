@@ -1,0 +1,55 @@
+{
+  "name": "rheston-american-anchor",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/rheston-american-anchor-20260805T055638Z",
+  "status": "done",
+  "pid": 38718,
+  "phase_index": 0,
+  "total_phases": 2,
+  "phase": "2. does the gap come from the exercise grid?",
+  "step": 3,
+  "total": 3,
+  "pct": 100.0,
+  "elapsed_s": 40.4,
+  "elapsed_human": "40s",
+  "eta_s": 80.9,
+  "eta_human": "1m20s",
+  "started_at": "2026-08-05T05:56:38Z",
+  "updated_at": "2026-08-05T05:57:18Z",
+  "meta": {
+    "purpose": "calibrate the LSM American estimator at H=0.5 against published Heston American put prices",
+    "steps": 200,
+    "ex_dates": 200,
+    "paths_eu": 400000,
+    "paths_reg": 50000,
+    "paths_val": 100000,
+    "reference": "ADS2014 Table 3 (tree N=250) and Beliaeva-Nawalkha CV"
+  },
+  "timings": [
+    {
+      "phase": "1. American put at H=0.5 against two published references",
+      "index": 1,
+      "seconds": 34.68,
+      "human": "35s"
+    },
+    {
+      "phase": "2. does the gap come from the exercise grid?",
+      "index": 2,
+      "seconds": 5.75,
+      "human": "6s"
+    }
+  ],
+  "phase_elapsed_s": 5.75,
+  "phase_elapsed_human": "6s",
+  "partial": {},
+  "results": {
+    "am_anchor_mean_gap": -0.02091883576388893,
+    "am_anchor_mean_abs_gap": 0.020980518625000034,
+    "am_anchor_mean_abs_gap_pct": 0.634724419385326,
+    "am_anchor_worst_gap": -0.05894148989999959,
+    "am_anchor_time_mc": 34.32448601722717,
+    "am_anchor_mean_abs_gap_interior": 0.0222146667794118,
+    "_total_seconds": 40.43,
+    "_total_human": "40s"
+  },
+  "error": null
+}

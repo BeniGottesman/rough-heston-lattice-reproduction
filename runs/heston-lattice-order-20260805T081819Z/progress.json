@@ -1,0 +1,60 @@
+{
+  "name": "heston-lattice-order",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/heston-lattice-order-20260805T081819Z",
+  "status": "done",
+  "pid": 48506,
+  "phase_index": 0,
+  "total_phases": 2,
+  "phase": "2. the lattice ladder, both walks",
+  "step": 6,
+  "total": 6,
+  "pct": 100.0,
+  "elapsed_s": 382.0,
+  "elapsed_human": "6m21s",
+  "eta_s": 764.0,
+  "eta_human": "12m43s",
+  "started_at": "2026-08-05T08:18:19Z",
+  "updated_at": "2026-08-05T08:24:41Z",
+  "meta": {
+    "reference": "own Fourier at full precision, riccati steps 800",
+    "n_values": [
+      50,
+      100,
+      200
+    ],
+    "mref_rule": "max(4, ceil(4 sqrt(n/8)))",
+    "barrier_sd": 5.0
+  },
+  "timings": [
+    {
+      "phase": "1. the reference, and its own convergence",
+      "index": 1,
+      "seconds": 0.36,
+      "human": "0s"
+    },
+    {
+      "phase": "2. the lattice ladder, both walks",
+      "index": 2,
+      "seconds": 381.61,
+      "human": "6m21s"
+    }
+  ],
+  "phase_elapsed_s": 381.61,
+  "phase_elapsed_human": "6m21s",
+  "partial": {},
+  "results": {
+    "reference_self_stability": 4.927130906828836e-06,
+    "fitted_order_mean_cleanfits_binomial": 0.6531233999529681,
+    "clean_fit_count_binomial": 5,
+    "fitted_order_mean_binomial": 0.6884098947390264,
+    "fitted_order_mean": 0.6884098947390264,
+    "fitted_order_mean_cleanfits": 0.6531233999529681,
+    "clean_fit_count": 5,
+    "fitted_order_mean_cleanfits_trinomial": 1.177940383167049,
+    "clean_fit_count_trinomial": 6,
+    "fitted_order_mean_trinomial": 1.177940383167049,
+    "_total_seconds": 381.98,
+    "_total_human": "6m21s"
+  },
+  "error": null
+}

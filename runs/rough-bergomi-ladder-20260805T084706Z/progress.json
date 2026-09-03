@@ -1,0 +1,84 @@
+{
+  "name": "rough-bergomi-ladder",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/rough-bergomi-ladder-20260805T084706Z",
+  "status": "done",
+  "pid": 50432,
+  "phase_index": 0,
+  "total_phases": 4,
+  "phase": "3. H = 0.3",
+  "step": 6,
+  "total": 6,
+  "pct": 100.0,
+  "elapsed_s": 387.6,
+  "elapsed_human": "6m27s",
+  "eta_s": 1550.4,
+  "eta_human": "25m50s",
+  "started_at": "2026-08-05T08:47:06Z",
+  "updated_at": "2026-08-05T08:53:34Z",
+  "meta": {
+    "model": "rough Bergomi (in the paper's class; no closed form)",
+    "reference": "exact-covariance-driver Monte-Carlo, eta=0 control variate",
+    "H_values": [
+      0.05,
+      0.1,
+      0.3
+    ],
+    "n_values": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "eta": 0.3,
+    "rho": -0.7,
+    "mc_paths": 2000000,
+    "note": "sigma_y=1 so the driver walk has no drift and no F058 variance loss; the error is the rough part only"
+  },
+  "timings": [
+    {
+      "phase": "0. reference sanity (eta=0 control = Black-Scholes)",
+      "index": 1,
+      "seconds": 27.77,
+      "human": "28s"
+    },
+    {
+      "phase": "1. H = 0.05",
+      "index": 2,
+      "seconds": 114.51,
+      "human": "1m54s"
+    },
+    {
+      "phase": "2. H = 0.1",
+      "index": 3,
+      "seconds": 134.29,
+      "human": "2m14s"
+    },
+    {
+      "phase": "3. H = 0.3",
+      "index": 4,
+      "seconds": 111.02,
+      "human": "1m51s"
+    }
+  ],
+  "phase_elapsed_s": 111.02,
+  "phase_elapsed_human": "1m51s",
+  "partial": {},
+  "results": {
+    "mc_price_H0.05": 11.82842610530982,
+    "mc_band_H0.05": 0.0033451289438697312,
+    "tree_error_n128_H0.05": 0.08437842567773046,
+    "fitted_order_H0.05": 0.15217504515565763,
+    "mc_price_H0.1": 11.792708858130997,
+    "mc_band_H0.1": 0.0031386010413813068,
+    "tree_error_n128_H0.1": 0.1910039126242964,
+    "fitted_order_H0.1": -0.7057944940751913,
+    "mc_price_H0.3": 11.758936446794113,
+    "mc_band_H0.3": 0.0026066365329845257,
+    "tree_error_n128_H0.3": 0.09975562643009894,
+    "fitted_order_H0.3": -0.16551336200153074,
+    "_total_seconds": 387.59,
+    "_total_human": "6m27s"
+  },
+  "error": null
+}

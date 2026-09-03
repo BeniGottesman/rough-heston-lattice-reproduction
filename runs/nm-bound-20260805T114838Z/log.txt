@@ -1,0 +1,19 @@
+11:48:38 start nm-bound pid=62514
+11:48:38 phase 1/5: curves (total=32)
+11:58:37 phase 1 took 9m59s (599.54s)
+11:58:37 phase 2/5: mstar (total=3)
+11:58:37 phase 2 took 0s (0.00s)
+11:58:37 phase 3/5: ratio (total=4)
+11:58:37 phase 3 took 0s (0.00s)
+11:58:37 phase 4/5: epslaw (total=3)
+11:58:37 phase 4 took 0s (0.00s)
+11:58:37 phase 5/5: variance (total=12)
+11:58:47 variance H=0.05 n=16 m=6 failed: non-finite discrete kernel
+12:00:13 wrote RESULTS.md
+12:00:13 result slope_3pct_best_H0.05 = 0.41219858311113233
+12:00:13 result slope_3pct_best_H0.1 = 0.41219858311113233
+12:00:13 result slope_3pct_best_H0.2 = 0.25762411444445754
+12:00:13 result slope_3pct_best_H0.3 = 0.20609929155556597
+12:00:13 result wobbles = 0
+12:00:13 phase 5 took 1m35s (95.71s)
+12:00:13 done in 11m35s (695.26s)

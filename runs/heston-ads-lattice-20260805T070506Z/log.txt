@@ -1,0 +1,65 @@
+07:05:06 start heston-ads-lattice pid=43530
+07:05:06 phase 1/4: 1. European put and call, both walks, vs ADS's tree and analytic (total=6)
+07:05:10 result time_european_binomial_n50 = 4.375062942504883
+07:06:06 result time_european_binomial_n100 = 55.45346212387085
+07:16:04 result time_european_binomial_n200 = 598.3763778209686
+07:16:14 result time_european_trinomial_n50 = 9.981353998184204
+07:17:34 result time_european_trinomial_n100 = 79.41460609436035
+07:28:59 result time_european_trinomial_n200 = 684.9379088878632
+07:28:59 result eu_put_mean_abs_err_binomial_n50 = 0.1483656316530445
+07:28:59 result eu_put_max_abs_err_binomial_n50 = 0.7418242008110001
+07:28:59 result eu_put_mean_abs_err_binomial_n100 = 0.07250793832762223
+07:28:59 result eu_put_max_abs_err_binomial_n100 = 0.356966813124
+07:28:59 result eu_put_mean_abs_err_binomial_n200 = 0.03575259881975564
+07:28:59 result eu_put_max_abs_err_binomial_n200 = 0.1749846853420003
+07:28:59 result eu_put_mean_abs_err_trinomial_n50 = 0.009743949536866551
+07:28:59 result eu_put_max_abs_err_trinomial_n50 = 0.03202726472799977
+07:28:59 result eu_put_mean_abs_err_trinomial_n100 = 0.004649471923066762
+07:28:59 result eu_put_max_abs_err_trinomial_n100 = 0.014886089184000362
+07:28:59 result eu_put_mean_abs_err_trinomial_n200 = 0.0024623167707110336
+07:28:59 result eu_put_max_abs_err_trinomial_n200 = 0.007894863157999588
+07:28:59 result eu_put_mean_abs_err_ads_n500 = 0.0017644444444445202
+07:28:59 result eu_put_mean_abs_err_bino_vol0.2 = 0.0005906760763332464
+07:28:59 result eu_put_mean_abs_err_trino_vol0.2 = 0.0003942899330000434
+07:28:59 result eu_put_mean_abs_err_bino_vol0.3 = 0.019349641097466775
+07:28:59 result eu_put_mean_abs_err_trino_vol0.3 = 0.002504530881199966
+07:28:59 result eu_put_mean_abs_err_bino_vol0.4 = 0.08731747928546692
+07:28:59 result eu_put_mean_abs_err_trino_vol0.4 = 0.004488129497933091
+07:28:59 phase 1 took 23m52s (1432.55s)
+07:28:59 phase 2/4: 2. American put: both walks, LSM, and two published references (total=7)
+07:29:02 result time_american_binomial_n50 = 3.2379860877990723
+07:29:39 result time_american_binomial_n100 = 37.213823080062866
+07:42:46 result time_american_binomial_n200 = 786.9100971221924
+07:42:57 result time_american_trinomial_n50 = 11.04058289527893
+07:44:38 result time_american_trinomial_n100 = 100.80248785018921
+08:01:36 result time_american_trinomial_n200 = 1017.7335331439972
+08:02:18 result time_lsm_american = 42.89796829223633
+08:02:18 result am_put_mean_err_bino_vs_cv = -0.02087199307677787
+08:02:18 result am_put_mean_err_trino_vs_cv = 0.003384839539638655
+08:02:18 result am_put_mean_abs_err_trino_vs_cv = 0.003397217228416437
+08:02:18 result am_put_mean_err_lsm_vs_cv = -0.016113280208333438
+08:02:18 phase 2 took 33m19s (1999.87s)
+08:02:18 phase 3/4: 3. the mechanism, measured node by node (total=1)
+08:02:18 result max_var_err_binomial_n50 = 1.0
+08:02:18 result max_var_err_binomial_n100 = 0.5116
+08:02:18 result max_var_err_binomial_n200 = 0.2558
+08:02:18 result max_var_err_trinomial_n50 = 2.22e-16
+08:02:18 result max_var_err_trinomial_n100 = 3.331e-16
+08:02:18 result max_var_err_trinomial_n200 = 3.331e-16
+08:02:18 result am_call_control_binomial_n50 = 0.0
+08:02:18 result am_call_control_binomial_n100 = 0.0
+08:02:18 result am_call_control_binomial_n200 = 0.0
+08:02:18 result am_call_control_trinomial_n50 = 8.418799879450489e-08
+08:02:18 result am_call_control_trinomial_n100 = 6.562899912410103e-08
+08:02:18 result am_call_control_trinomial_n200 = 6.277199915416531e-08
+08:02:18 phase 3 took 0s (0.01s)
+08:02:18 phase 4/4: 4. put-call parity, which the walk either respects or does not (total=1)
+08:02:18 result parity_mean_abs_err_binomial_n50 = 0.10132570099644266
+08:02:18 result parity_mean_abs_err_binomial_n100 = 0.05060610361028715
+08:02:18 result parity_mean_abs_err_binomial_n200 = 0.025183827535953687
+08:02:18 result parity_mean_abs_err_trinomial_n50 = 0.001994824958355452
+08:02:18 result parity_mean_abs_err_trinomial_n100 = 0.0008961200065107811
+08:02:18 result parity_mean_abs_err_trinomial_n200 = 0.0005828342624219927
+08:02:18 wrote RESULTS.md
+08:02:18 phase 4 took 0s (0.00s)
+08:02:18 done in 57m12s (3432.43s)

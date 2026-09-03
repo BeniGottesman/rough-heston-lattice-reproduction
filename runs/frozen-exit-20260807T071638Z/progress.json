@@ -1,0 +1,326 @@
+{
+  "name": "frozen-exit",
+  "run_dir": "/Users/benjamin.g/Projects/rvt-worktrees/frozen-exit/runs/frozen-exit-20260807T071638Z",
+  "status": "done",
+  "pid": 18176,
+  "phase_index": 0,
+  "total_phases": 6,
+  "phase": "FF4/FF7 coupled MC cross-check (M=1572864)",
+  "step": 64,
+  "total": 64,
+  "pct": 100.0,
+  "elapsed_s": 314.9,
+  "elapsed_human": "5m14s",
+  "eta_s": 1889.5,
+  "eta_human": "31m29s",
+  "started_at": "2026-08-07T07:16:38Z",
+  "updated_at": "2026-08-07T07:21:53Z",
+  "meta": {
+    "quick": false,
+    "band": 0.5,
+    "h_list": [
+      -0.1,
+      -0.3,
+      -0.45
+    ],
+    "ff2_h": [
+      -0.1,
+      -0.3
+    ],
+    "betas": [
+      0.3333333333333333,
+      0.5
+    ],
+    "ells": [
+      1.0,
+      2.0,
+      4.0
+    ],
+    "ff1_n": [
+      1000,
+      3162,
+      10000,
+      31623,
+      100000,
+      316228,
+      1000000
+    ],
+    "ff2_n": [
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048,
+      4096,
+      8192,
+      16384
+    ],
+    "ff2_paths": 384,
+    "ff2_mpu": 1048576,
+    "ff3_n": [
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "ff3_paths": 192,
+    "ff4_n": [
+      100,
+      1000,
+      10000,
+      100000,
+      1000000,
+      10000000,
+      100000000,
+      1000000000,
+      10000000000,
+      100000000000,
+      1000000000000
+    ],
+    "ff7_c": 0.5,
+    "algo_version": "1.3.2",
+    "code_sha": "75a8d3e2f30d"
+  },
+  "timings": [
+    {
+      "phase": "FF1 frozen-vs-unfrozen (discrete only)",
+      "index": 1,
+      "seconds": 40.9,
+      "human": "41s"
+    },
+    {
+      "phase": "FF2/FF6 frozen-vs-frozen (coupled, mpu=1048576, M=1310720)",
+      "index": 2,
+      "seconds": 169.09,
+      "human": "2m49s"
+    },
+    {
+      "phase": "FF2 resolution sensitivity (fixed n, varying fine grid)",
+      "index": 3,
+      "seconds": 45.47,
+      "human": "45s"
+    },
+    {
+      "phase": "FF3 ordering L1 (non-constant coefficients, M=655360)",
+      "index": 4,
+      "seconds": 29.32,
+      "human": "29s"
+    },
+    {
+      "phase": "FF4/FF7 exit-time law (exact, both insets)",
+      "index": 5,
+      "seconds": 5.02,
+      "human": "5s"
+    },
+    {
+      "phase": "FF4/FF7 coupled MC cross-check (M=1572864)",
+      "index": 6,
+      "seconds": 25.09,
+      "human": "25s"
+    }
+  ],
+  "phase_elapsed_s": 25.09,
+  "phase_elapsed_human": "25s",
+  "partial": {
+    "note": "FF4-MC batch 64/64"
+  },
+  "results": {
+    "FF1_L2_n1000_h-0.1": 0.96612,
+    "FF1_L2_n1000_h-0.3": 2.85022,
+    "FF1_L2_n1000_h-0.45": 6.37712,
+    "FF1_L2_n3162_h-0.1": 1.05654,
+    "FF1_L2_n3162_h-0.3": 3.18407,
+    "FF1_L2_n3162_h-0.45": 7.85997,
+    "FF1_L2_n10000_h-0.1": 1.09771,
+    "FF1_L2_n10000_h-0.3": 3.46822,
+    "FF1_L2_n10000_h-0.45": 9.05885,
+    "FF1_L2_n31623_h-0.1": 1.11764,
+    "FF1_L2_n31623_h-0.3": 3.65613,
+    "FF1_L2_n31623_h-0.45": 10.57456,
+    "FF1_L2_n100000_h-0.1": 1.11494,
+    "FF1_L2_n100000_h-0.3": 3.87094,
+    "FF1_L2_n100000_h-0.45": 11.94445,
+    "FF1_L2_n316228_h-0.1": 1.17933,
+    "FF1_L2_n316228_h-0.3": 4.03515,
+    "FF1_L2_n316228_h-0.45": 12.36682,
+    "FF1_L2_n1000000_h-0.1": 1.12714,
+    "FF1_L2_n1000000_h-0.3": 4.15377,
+    "FF1_L2_n1000000_h-0.45": 14.01192,
+    "FF6_slope_total_theta_h-0.1_b13_L1": [
+      0.1524,
+      0.0108
+    ],
+    "FF6_slope_total_theta_h-0.1_b13_L2": [
+      0.0801,
+      0.0104
+    ],
+    "FF6_slope_total_theta_h-0.1_b13_L4": [
+      0.0119,
+      0.0077
+    ],
+    "FF6_slope_total_theta_h-0.1_b12_L1": [
+      0.3265,
+      0.0156
+    ],
+    "FF6_slope_total_theta_h-0.1_b12_L2": [
+      0.2379,
+      0.0186
+    ],
+    "FF6_slope_total_theta_h-0.1_b12_L4": [
+      0.1472,
+      0.0187
+    ],
+    "FF6_slope_F1_h-0.1_b13_L1": [
+      0.188,
+      0.0017
+    ],
+    "FF6_slope_F1_h-0.1_b13_L2": [
+      0.1902,
+      0.0017
+    ],
+    "FF6_slope_F1_h-0.1_b13_L4": [
+      0.1945,
+      0.0017
+    ],
+    "FF6_slope_F1_h-0.1_b12_L1": [
+      0.2194,
+      0.0018
+    ],
+    "FF6_slope_F1_h-0.1_b12_L2": [
+      0.2216,
+      0.0018
+    ],
+    "FF6_slope_F1_h-0.1_b12_L4": [
+      0.226,
+      0.0019
+    ],
+    "FF6_slope_F2_h-0.1_b13_L1": [
+      0.1541,
+      0.0107
+    ],
+    "FF6_slope_F2_h-0.1_b13_L2": [
+      0.0863,
+      0.0103
+    ],
+    "FF6_slope_F2_h-0.1_b13_L4": [
+      0.022,
+      0.0077
+    ],
+    "FF6_slope_F2_h-0.1_b12_L1": [
+      0.331,
+      0.016
+    ],
+    "FF6_slope_F2_h-0.1_b12_L2": [
+      0.2466,
+      0.0185
+    ],
+    "FF6_slope_F2_h-0.1_b12_L4": [
+      0.1588,
+      0.0185
+    ],
+    "FF6_slope_total_theta_h-0.3_b13_L1": [
+      0.0656,
+      0.0066
+    ],
+    "FF6_slope_total_theta_h-0.3_b13_L2": [
+      0.0325,
+      0.0065
+    ],
+    "FF6_slope_total_theta_h-0.3_b13_L4": [
+      -0.0095,
+      0.0057
+    ],
+    "FF6_slope_total_theta_h-0.3_b12_L1": [
+      0.1678,
+      0.0079
+    ],
+    "FF6_slope_total_theta_h-0.3_b12_L2": [
+      0.139,
+      0.0099
+    ],
+    "FF6_slope_total_theta_h-0.3_b12_L4": [
+      0.0859,
+      0.0111
+    ],
+    "FF6_slope_F1_h-0.3_b13_L1": [
+      0.1008,
+      0.0015
+    ],
+    "FF6_slope_F1_h-0.3_b13_L2": [
+      0.1025,
+      0.0015
+    ],
+    "FF6_slope_F1_h-0.3_b13_L4": [
+      0.1059,
+      0.0016
+    ],
+    "FF6_slope_F1_h-0.3_b12_L1": [
+      0.1245,
+      0.0015
+    ],
+    "FF6_slope_F1_h-0.3_b12_L2": [
+      0.1259,
+      0.0015
+    ],
+    "FF6_slope_F1_h-0.3_b12_L4": [
+      0.1286,
+      0.0016
+    ],
+    "FF6_slope_F2_h-0.3_b13_L1": [
+      0.0848,
+      0.0063
+    ],
+    "FF6_slope_F2_h-0.3_b13_L2": [
+      0.0614,
+      0.006
+    ],
+    "FF6_slope_F2_h-0.3_b13_L4": [
+      0.0275,
+      0.0056
+    ],
+    "FF6_slope_F2_h-0.3_b12_L1": [
+      0.2138,
+      0.0104
+    ],
+    "FF6_slope_F2_h-0.3_b12_L2": [
+      0.1738,
+      0.0102
+    ],
+    "FF6_slope_F2_h-0.3_b12_L4": [
+      0.1216,
+      0.0102
+    ],
+    "FF3_A_n64_violfrac": 0.0,
+    "FF3_A_n256_violfrac": 0.0,
+    "FF3_A_n1024_violfrac": 0.0,
+    "FF3_A_n4096_violfrac": 0.0,
+    "FF3_B_n64_violfrac": 0.0,
+    "FF3_B_n256_violfrac": 0.0,
+    "FF3_B_n1024_violfrac": 0.0,
+    "FF3_B_n4096_violfrac": 0.0,
+    "FF3_C0.5_n64_violfrac": 0.0,
+    "FF3_C0.5_n256_violfrac": 0.0,
+    "FF3_C0.5_n1024_violfrac": 0.0,
+    "FF3_C0.5_n4096_violfrac": 0.0,
+    "FF3_C1.0_n64_violfrac": 0.0,
+    "FF3_C1.0_n256_violfrac": 0.01042,
+    "FF3_C1.0_n1024_violfrac": 0.03125,
+    "FF3_C1.0_n4096_violfrac": 0.04167,
+    "FF3_C2.0_n64_violfrac": 0.00521,
+    "FF3_C2.0_n256_violfrac": 0.05208,
+    "FF3_C2.0_n1024_violfrac": 0.07292,
+    "FF3_C2.0_n4096_violfrac": 0.10938,
+    "FF7_slope_in_epsn_b13": 0.9748,
+    "FF7_slope_in_epsn_b12": 0.9927,
+    "FF4_MC_n256_b13_neg": 0,
+    "FF4_MC_n256_b12_neg": 0,
+    "FF4_MC_n1024_b13_neg": 0,
+    "FF4_MC_n1024_b12_neg": 0,
+    "FF4_MC_n4096_b13_neg": 0,
+    "FF4_MC_n4096_b12_neg": 0,
+    "_total_seconds": 314.91,
+    "_total_human": "5m14s"
+  },
+  "error": null
+}

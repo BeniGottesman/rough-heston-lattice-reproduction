@@ -1,0 +1,12 @@
+# Conda equivalent of environment/requirements.lock.
+# The four packages are the whole dependency set; nothing else is imported by
+# sim/ or verify/.
+name: rough-vol-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy=2.0.2
+  - scipy=1.13.1
+  - mpmath=1.3.0
+  - sympy=1.14.0

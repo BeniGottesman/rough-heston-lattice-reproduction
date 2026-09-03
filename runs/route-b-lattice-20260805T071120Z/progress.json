@@ -1,0 +1,218 @@
+{
+  "name": "route-b-lattice",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/route-b-lattice-20260805T071120Z",
+  "status": "done",
+  "pid": 44188,
+  "phase_index": 0,
+  "total_phases": 6,
+  "phase": "cost",
+  "step": 1,
+  "total": 1,
+  "pct": 100.0,
+  "elapsed_s": 223.9,
+  "elapsed_human": "3m43s",
+  "eta_s": 1343.7,
+  "eta_human": "22m23s",
+  "started_at": "2026-08-05T07:11:20Z",
+  "updated_at": "2026-08-05T07:15:04Z",
+  "meta": {
+    "H": 0.1,
+    "eta": 0.3,
+    "rho": -0.7,
+    "kappa": 0.5,
+    "gamma": 0.04999999999999999,
+    "grid": {
+      "8": [
+        1,
+        2,
+        3
+      ],
+      "16": [
+        1,
+        2
+      ],
+      "32": [
+        1,
+        2
+      ],
+      "64": [
+        1
+      ]
+    },
+    "mc_paths": 400000
+  },
+  "timings": [
+    {
+      "phase": "recombination of the lifted factor",
+      "index": 1,
+      "seconds": 0.01,
+      "human": "0s"
+    },
+    {
+      "phase": "the lift's structure: w_i sd_i stays O(1)",
+      "index": 2,
+      "seconds": 1.37,
+      "human": "1s"
+    },
+    {
+      "phase": "implementation controls",
+      "index": 3,
+      "seconds": 63.32,
+      "human": "1m03s"
+    },
+    {
+      "phase": "the telescope, measured",
+      "index": 4,
+      "seconds": 150.92,
+      "human": "2m30s"
+    },
+    {
+      "phase": "the two new knobs",
+      "index": 5,
+      "seconds": 8.32,
+      "human": "8s"
+    },
+    {
+      "phase": "cost",
+      "index": 6,
+      "seconds": 0.01,
+      "human": "0s"
+    }
+  ],
+  "phase_elapsed_s": 0.01,
+  "phase_elapsed_human": "0s",
+  "partial": {
+    "inner": "knobs m=2 n=8"
+  },
+  "results": {
+    "unrounded_factor_recombines_only_at_s_zero": true,
+    "state_counts_s2_k12": 4096,
+    "w_sd_products_stay_O1": {
+      "n8m1": 0.6317,
+      "n8m2": 0.0744,
+      "n8m3": 0.0073,
+      "n16m1": 0.6782,
+      "n16m2": 0.1003,
+      "n32m1": 0.7166,
+      "n32m2": 0.1265,
+      "n64m1": 0.7475
+    },
+    "control_eta0_max_m_spread": 3.552713678800501e-15,
+    "control_eta0_max_gap_to_existing_code": 8.231623382926045e-09,
+    "control_dp_vs_mc_worst_sigma": 1.7,
+    "continuous_reference": 11.78435,
+    "continuous_reference_stderr": 0.003585,
+    "skipped_for_memory": [],
+    "telescope": [
+      {
+        "n": 8,
+        "mref": 4,
+        "exact": 11.764980797057646,
+        "exact_se": 0.0029149280441721367,
+        "onestep": 11.771284772118356,
+        "onestep_se": 0.0034408707965412123,
+        "price_scheme_err": 0.05895681007162068,
+        "nx": 137,
+        "lift": {
+          "1": 11.766727,
+          "2": 11.76888,
+          "3": 11.768948
+        },
+        "sec": {
+          "1": 0.013347,
+          "2": 0.401916,
+          "3": 36.539878
+        },
+        "S": {
+          "1": 45,
+          "2": 1617,
+          "3": 78375
+        }
+      },
+      {
+        "n": 16,
+        "mref": 6,
+        "exact": 11.735066060258664,
+        "exact_se": 0.0026972243472386075,
+        "onestep": 11.757923962948345,
+        "onestep_se": 0.0038620050212596346,
+        "price_scheme_err": 0.029058566557500498,
+        "nx": 289,
+        "lift": {
+          "1": 11.725352,
+          "2": 11.72994
+        },
+        "sec": {
+          "1": 0.079611,
+          "2": 4.685717
+        },
+        "S": {
+          "1": 67,
+          "2": 4025
+        }
+      },
+      {
+        "n": 32,
+        "mref": 8,
+        "exact": 11.719800356364274,
+        "exact_se": 0.002677601315577489,
+        "onestep": 11.784282913958634,
+        "onestep_se": 0.004746032916253402,
+        "price_scheme_err": 0.016483006306945214,
+        "nx": 545,
+        "lift": {
+          "1": 11.709333,
+          "2": 11.716592
+        },
+        "sec": {
+          "1": 0.398783,
+          "2": 51.385797
+        },
+        "S": {
+          "1": 99,
+          "2": 9633
+        }
+      },
+      {
+        "n": 64,
+        "mref": 12,
+        "exact": 11.71857738266708,
+        "exact_se": 0.0026761816780083315,
+        "onestep": 11.869028812813264,
+        "onestep_se": 0.005829339332106903,
+        "price_scheme_err": 0.007737567751814112,
+        "nx": 1153,
+        "lift": {
+          "1": 11.701588
+        },
+        "sec": {
+          "1": 2.611322
+        },
+        "S": {
+          "1": 145
+        }
+      }
+    ],
+    "knob_max_sensitivity": 0.001696334831780888,
+    "price_axis_exponent": 1.013,
+    "state_exponent_drift_of_w_sd_products": {
+      "1": 0.081,
+      "2": 0.383
+    },
+    "cost_exponent_m1_eps": 43,
+    "cost_exponent_m2_eps": 54,
+    "state_exponent_fits": {
+      "1": {
+        "factors": 0.563,
+        "total": 1.576
+      },
+      "2": {
+        "factors": 1.287,
+        "total": 2.283
+      }
+    },
+    "_total_seconds": 223.95,
+    "_total_human": "3m43s"
+  },
+  "error": null
+}

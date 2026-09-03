@@ -1,0 +1,231 @@
+{
+  "name": "route-aprime",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/route-aprime-20260804T114010Z",
+  "status": "done",
+  "pid": 23726,
+  "phase_index": 4,
+  "total_phases": 4,
+  "phase": "V9  European: Route A' vs Monte-Carlo of the TRUE rough model",
+  "step": 6,
+  "total": 6,
+  "pct": 100.0,
+  "elapsed_s": 784.8,
+  "elapsed_human": "13m04s",
+  "eta_s": 0.0,
+  "eta_human": "0s",
+  "started_at": "2026-08-04T11:40:10Z",
+  "updated_at": "2026-08-04T11:53:14Z",
+  "meta": {
+    "scheme": "Route A' (embed the driver, couple the price)",
+    "H": 0.1,
+    "eta": 0.3,
+    "rho": -0.7,
+    "T": 1.0,
+    "S0": 100,
+    "K": 100,
+    "mref_rule": "max(4, ceil(4*sqrt(n/8)))",
+    "sd_zeta_T": 2.236
+  },
+  "partial": {
+    "inner": "A' n=64 k=0",
+    "note": "euro n=64",
+    "A'_eta0_n8": 11.9833,
+    "err_n8": 0.05994,
+    "A'_eta0_n16": 11.9529,
+    "err_n16": 0.02954,
+    "A'_eta0_n32": 11.9401,
+    "err_n32": 0.01674,
+    "A'_eta0_n64": 11.9311,
+    "err_n64": 0.00772,
+    "viol4_0.84 sd ": 0,
+    "violA_0.84 sd ": 0,
+    "viol4_2.38 sd ": 23424,
+    "violA_2.38 sd ": 0,
+    "viol4_3.00 sd": 25530,
+    "violA_3.00 sd": 0,
+    "viol4_none": 43930,
+    "violA_none": 0,
+    "A'_0.84 sd _n8": 11.76809,
+    "A'_0.84 sd _n16": 11.7303,
+    "A'_0.84 sd _n32": 11.7181,
+    "A'_0.84 sd _n64": 11.71697,
+    "A'_2.38 sd _n8": 11.77202,
+    "A'_2.38 sd _n16": 11.75123,
+    "A'_2.38 sd _n32": 11.77647,
+    "A'_2.38 sd _n64": 11.83513,
+    "A'_3.00 sd_n8": 11.77204,
+    "A'_3.00 sd_n16": 11.75189,
+    "A'_3.00 sd_n32": 11.78339,
+    "A'_3.00 sd_n64": 11.86118,
+    "A'_none_n8": 11.77204,
+    "A'_none_n16": 11.75199,
+    "A'_none_n32": 11.78629,
+    "A'_none_n64": 11.88542,
+    "euro_gap_n8": 0.0405,
+    "euro_gap_n16": 0.0208,
+    "euro_gap_n32": 0.0553,
+    "euro_gap_n64": 0.1545
+  },
+  "results": {
+    "crr_reference": 11.923389,
+    "phase1_V8_calibration": {
+      "reference": 11.923389,
+      "rows": [
+        {
+          "n": 8,
+          "mref": 4,
+          "value": 11.983327,
+          "abs_err": 0.059938,
+          "neg_probs": 0,
+          "max_mass_error": 3.30601e-07
+        },
+        {
+          "n": 16,
+          "mref": 6,
+          "value": 11.952926,
+          "abs_err": 0.029536,
+          "neg_probs": 0,
+          "max_mass_error": 3.58792e-07
+        },
+        {
+          "n": 32,
+          "mref": 8,
+          "value": 11.940125,
+          "abs_err": 0.016735,
+          "neg_probs": 0,
+          "max_mass_error": 3.58802e-07
+        },
+        {
+          "n": 64,
+          "mref": 12,
+          "value": 11.931107,
+          "abs_err": 0.007718,
+          "neg_probs": 0,
+          "max_mass_error": 3.58822e-07
+        }
+      ],
+      "observed_error_slope_in_delta": 0.969
+    },
+    "phase2_V3prime_admissibility": {
+      "n": 32,
+      "rows": [
+        {
+          "barrier": "0.84 sd (4-point limit)",
+          "zmax": 1.877,
+          "fourpoint_value": 12.697,
+          "fourpoint_violations": 0,
+          "fourpoint_max_violation": 0.0,
+          "aprime_value": 11.7181,
+          "aprime_negative_probs": 0,
+          "aprime_max_mass_error": 3.58801e-07
+        },
+        {
+          "barrier": "2.38 sd (9-point limit)",
+          "zmax": 5.317,
+          "fourpoint_value": 12.9651,
+          "fourpoint_violations": 23424,
+          "fourpoint_max_violation": 0.0466,
+          "aprime_value": 11.7765,
+          "aprime_negative_probs": 0,
+          "aprime_max_mass_error": 3.58791e-07
+        },
+        {
+          "barrier": "3.00 sd",
+          "zmax": 6.708,
+          "fourpoint_value": 12.8444,
+          "fourpoint_violations": 25530,
+          "fourpoint_max_violation": 0.0548,
+          "aprime_value": 11.7834,
+          "aprime_negative_probs": 0,
+          "aprime_max_mass_error": 3.58808e-07
+        },
+        {
+          "barrier": "none",
+          "zmax": null,
+          "fourpoint_value": 10.7596,
+          "fourpoint_violations": 43930,
+          "fourpoint_max_violation": 0.0612,
+          "aprime_value": 11.7863,
+          "aprime_negative_probs": 0,
+          "aprime_max_mass_error": 3.58791e-07
+        }
+      ]
+    },
+    "phase3_V13_american": {
+      "values_by_barrier": {
+        "0.84 sd (4-point limit)": {
+          "8": 11.76809,
+          "16": 11.7303,
+          "32": 11.7181,
+          "64": 11.71697
+        },
+        "2.38 sd (9-point limit)": {
+          "8": 11.77202,
+          "16": 11.75123,
+          "32": 11.77647,
+          "64": 11.83513
+        },
+        "3.00 sd": {
+          "8": 11.77204,
+          "16": 11.75189,
+          "32": 11.78339,
+          "64": 11.86118
+        },
+        "none": {
+          "8": 11.77204,
+          "16": 11.75199,
+          "32": 11.78629,
+          "64": 11.88542
+        }
+      },
+      "spread_across_barriers": {
+        "8": 0.00395,
+        "16": 0.02169,
+        "32": 0.06819,
+        "64": 0.16845
+      }
+    },
+    "mc_eta0_control": [
+      11.849,
+      0.0658
+    ],
+    "mc_true_rough_european": [
+      11.7309,
+      0.0482
+    ],
+    "phase4_V9_covariance_gap": {
+      "mc_eta0_control": [
+        11.849,
+        0.0658
+      ],
+      "black_scholes_eta0": 11.9235,
+      "mc_true_rough": [
+        11.7309,
+        0.0482
+      ],
+      "rows": [
+        {
+          "n": 8,
+          "tree": 11.7714,
+          "gap": 0.0405
+        },
+        {
+          "n": 16,
+          "tree": 11.7517,
+          "gap": 0.0208
+        },
+        {
+          "n": 32,
+          "tree": 11.7861,
+          "gap": 0.0553
+        },
+        {
+          "n": 64,
+          "tree": 11.8854,
+          "gap": 0.1545
+        }
+      ]
+    }
+  },
+  "error": null
+}

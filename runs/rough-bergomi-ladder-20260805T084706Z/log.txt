@@ -1,0 +1,23 @@
+08:47:06 start rough-bergomi-ladder pid=50432
+08:47:06 phase 1/4: 0. reference sanity (eta=0 control = Black-Scholes) (total=3)
+08:47:34 phase 1 took 28s (27.77s)
+08:47:34 phase 2/4: 1. H = 0.05 (total=6)
+08:47:58 result mc_price_H0.05 = 11.82842610530982
+08:47:58 result mc_band_H0.05 = 0.0033451289438697312
+08:49:29 result tree_error_n128_H0.05 = 0.08437842567773046
+08:49:29 result fitted_order_H0.05 = 0.15217504515565763
+08:49:29 phase 2 took 1m54s (114.51s)
+08:49:29 phase 3/4: 2. H = 0.1 (total=6)
+08:49:52 result mc_price_H0.1 = 11.792708858130997
+08:49:52 result mc_band_H0.1 = 0.0031386010413813068
+08:51:43 result tree_error_n128_H0.1 = 0.1910039126242964
+08:51:43 result fitted_order_H0.1 = -0.7057944940751913
+08:51:43 phase 3 took 2m14s (134.29s)
+08:51:43 phase 4/4: 3. H = 0.3 (total=6)
+08:52:04 result mc_price_H0.3 = 11.758936446794113
+08:52:04 result mc_band_H0.3 = 0.0026066365329845257
+08:53:34 result tree_error_n128_H0.3 = 0.09975562643009894
+08:53:34 result fitted_order_H0.3 = -0.16551336200153074
+08:53:34 wrote RESULTS.md
+08:53:34 phase 4 took 1m51s (111.02s)
+08:53:34 done in 6m27s (387.59s)

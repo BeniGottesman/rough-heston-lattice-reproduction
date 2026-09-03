@@ -1,0 +1,5 @@
+06:57:44 start heston-ads-lattice pid=42782
+06:57:44 phase 1/4: 1. European put and call: our lattice vs ADS's tree vs analytic (total=180)
+06:57:45 result time_lattice_european_n25 = 0.6754498481750488
+06:57:50 result time_lattice_european_n50 = 5.708357095718384
+06:58:47 result time_lattice_european_n100 = 56.728283166885376

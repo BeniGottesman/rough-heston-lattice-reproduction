@@ -1,0 +1,76 @@
+{
+  "name": "cost-equivalence",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/cost-equivalence-20260805T143329Z",
+  "status": "done",
+  "pid": 79632,
+  "phase_index": 0,
+  "total_phases": 6,
+  "phase": "american",
+  "step": 6,
+  "total": 6,
+  "pct": 100.0,
+  "elapsed_s": 318.7,
+  "elapsed_human": "5m18s",
+  "eta_s": 1911.9,
+  "eta_human": "31m51s",
+  "started_at": "2026-08-05T14:33:29Z",
+  "updated_at": "2026-08-05T14:38:48Z",
+  "meta": {
+    "algo_version": "1.3.2",
+    "code_sha": "457dcce1119a"
+  },
+  "timings": [
+    {
+      "phase": "setup",
+      "index": 1,
+      "seconds": 15.0,
+      "human": "15s"
+    },
+    {
+      "phase": "sigma",
+      "index": 2,
+      "seconds": 53.06,
+      "human": "53s"
+    },
+    {
+      "phase": "reference",
+      "index": 3,
+      "seconds": 36.14,
+      "human": "36s"
+    },
+    {
+      "phase": "lattice",
+      "index": 4,
+      "seconds": 213.92,
+      "human": "3m33s"
+    },
+    {
+      "phase": "equiv",
+      "index": 5,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "american",
+      "index": 6,
+      "seconds": 0.54,
+      "human": "1s"
+    }
+  ],
+  "phase_elapsed_s": 0.54,
+  "phase_elapsed_human": "1s",
+  "partial": {
+    "note": "H=0.3 lift m=1 n=32 american"
+  },
+  "results": {
+    "n16_onestep_ratio_H0.05": 0.1429739961895004,
+    "n16_onestep_nstar_H0.05": 586.7459522330679,
+    "n16_onestep_ratio_H0.1": 0.954880350461538,
+    "n16_onestep_nstar_H0.1": 4321.253386746172,
+    "n16_onestep_ratio_H0.3": 0.40403509679370897,
+    "n16_onestep_nstar_H0.3": 2013.1924935891013,
+    "_total_seconds": 318.65,
+    "_total_human": "5m18s"
+  },
+  "error": null
+}

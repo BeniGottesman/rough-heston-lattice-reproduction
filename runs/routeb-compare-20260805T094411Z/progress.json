@@ -1,0 +1,89 @@
+{
+  "name": "routeb-compare",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/routeb-compare-20260805T094411Z",
+  "status": "done",
+  "pid": 54925,
+  "phase_index": 0,
+  "total_phases": 4,
+  "phase": "3. H = 0.3: prices",
+  "step": 11,
+  "total": 11,
+  "pct": 100.0,
+  "elapsed_s": 1150.7,
+  "elapsed_human": "19m10s",
+  "eta_s": 4602.9,
+  "eta_human": "1h16m",
+  "started_at": "2026-08-05T09:44:11Z",
+  "updated_at": "2026-08-05T10:03:22Z",
+  "meta": {
+    "model": "rough Bergomi",
+    "eta": 0.3,
+    "rho": -0.7,
+    "T": 1.0,
+    "H_values": [
+      0.05,
+      0.1,
+      0.3
+    ],
+    "mc_paths": 2000000,
+    "pricers": "one-step (route_aprime), lift (LiftedLattice), reference (exact-covariance MC)",
+    "what": "does the Markovian lift remove the one-step lattice's variance divergence"
+  },
+  "timings": [
+    {
+      "phase": "0. driver variance ratio (analytic, exact)",
+      "index": 1,
+      "seconds": 3.37,
+      "human": "3s"
+    },
+    {
+      "phase": "1. H = 0.05: prices",
+      "index": 2,
+      "seconds": 228.23,
+      "human": "3m48s"
+    },
+    {
+      "phase": "2. H = 0.1: prices",
+      "index": 3,
+      "seconds": 443.16,
+      "human": "7m23s"
+    },
+    {
+      "phase": "3. H = 0.3: prices",
+      "index": 4,
+      "seconds": 475.97,
+      "human": "7m55s"
+    }
+  ],
+  "phase_elapsed_s": 475.97,
+  "phase_elapsed_human": "7m55s",
+  "partial": {
+    "inner": "lift m=2 n=32 166s"
+  },
+  "results": {
+    "vr_onestep_n512_H0.05": 27.437400640929113,
+    "vr_lift_m1_n512_H0.05": 0.16605577920291723,
+    "vr_lift_m2_n512_H0.05": 0.2847274844979274,
+    "vr_onestep_n512_H0.1": 29.406677887924104,
+    "vr_lift_m1_n512_H0.1": 0.3002607684024787,
+    "vr_lift_m2_n512_H0.1": 0.4653866137918285,
+    "vr_onestep_n512_H0.3": 7.275439519249911,
+    "vr_lift_m1_n512_H0.3": 0.6931490500684537,
+    "vr_lift_m2_n512_H0.3": 0.8170983551677888,
+    "mc_H0.05": 11.82842610530982,
+    "onestep_err_n128_H0.05": 0.08437842567773046,
+    "lift_m1_err_n128_H0.05": -0.15430929133100513,
+    "lift_m2_err_n32_H0.05": -0.1370448262729802,
+    "mc_H0.1": 11.792708858130997,
+    "onestep_err_n128_H0.1": 0.1910039126242964,
+    "lift_m1_err_n128_H0.1": -0.09255425179450683,
+    "lift_m2_err_n32_H0.1": -0.07637260697241466,
+    "mc_H0.3": 11.758936446794113,
+    "onestep_err_n128_H0.3": 0.09975562643009894,
+    "lift_m1_err_n128_H0.3": -0.006691690581714482,
+    "lift_m2_err_n32_H0.3": 0.008628708511604799,
+    "_total_seconds": 1150.73,
+    "_total_human": "19m10s"
+  },
+  "error": null
+}

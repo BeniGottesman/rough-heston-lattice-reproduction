@@ -1,0 +1,17 @@
+08:27:18 start heston-lattice-order pid=49193
+08:27:18 phase 1/2: 1. the reference, and its own convergence (total=6)
+08:27:19 result reference_self_stability = 4.927130906828836e-06
+08:27:19 phase 1 took 0s (0.34s)
+08:27:19 phase 2/2: 2. the lattice ladder, both walks (total=6)
+08:32:58 result fitted_order_mean_cleanfits_binomial = 0.6531233999529681
+08:32:58 result clean_fit_count_binomial = 5
+08:32:58 result fitted_order_mean_binomial = 0.6884098947390264
+08:32:58 result fitted_order_mean = 0.6884098947390264
+08:32:58 result fitted_order_mean_cleanfits = 0.6531233999529681
+08:32:58 result clean_fit_count = 5
+08:32:58 result fitted_order_mean_cleanfits_trinomial = 1.177940383167049
+08:32:58 result clean_fit_count_trinomial = 6
+08:32:58 result fitted_order_mean_trinomial = 1.177940383167049
+08:32:58 wrote RESULTS.md
+08:32:58 phase 2 took 5m39s (339.12s)
+08:32:58 done in 5m39s (339.46s)

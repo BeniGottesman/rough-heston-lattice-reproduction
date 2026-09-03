@@ -1,0 +1,14 @@
+11:40:10 start route-aprime pid=23726
+11:40:10 phase 1/4: V8  eta=0: Route A' vs exact CRR reference (total=5)
+11:40:12 result crr_reference = 11.923389
+11:40:13 result phase1_V8_calibration = {'reference': 11.923389, 'rows': [{'n': 8, 'mref': 4, 'value': 11.983327, 'abs_err': 0.059938, 'neg_probs': 0, 'max_mass_error': 3.30601e-07}, {'n': 16, 'mref': 6, 'value': 11.952926, 'abs_err': 0.029536, 'neg_probs': 0, 'max_mass_error': 3.58792e-07}, {'n': 32, 'mref': 8, 'value': 11.940125, 'abs_err': 0.016735, 'neg_probs': 0, 'max_mass_error': 3.58802e-07}, {'n': 64, 'mref': 12, 'value': 11.931107, 'abs_err': 0.007718, 'neg_probs': 0, 'max_mass_error': 3.58822e-07}], 'observed_error_slope_in_delta': 0.969}
+11:40:13 phase 2/4: V3' admissibility sweep: 4-point vs Route A' (total=8)
+11:40:15 result phase2_V3prime_admissibility = {'n': 32, 'rows': [{'barrier': '0.84 sd (4-point limit)', 'zmax': 1.877, 'fourpoint_value': 12.697, 'fourpoint_violations': 0, 'fourpoint_max_violation': 0.0, 'aprime_value': 11.7181, 'aprime_negative_probs': 0, 'aprime_max_mass_error': 3.58801e-07}, {'barrier': '2.38 sd (9-point limit)', 'zmax': 5.317, 'fourpoint_value': 12.9651, 'fourpoint_violations': 23424, 'fourpoint_max_violation': 0.0466, 'aprime_value': 11.7765, 'aprime_negative_probs': 0, 'aprime_max_mass_error': 3.58791e-07}, {'barrier': '3.00 sd', 'zmax': 6.708, 'fourpoint_value': 12.8444, 'fourpoint_violations': 25530, 'fourpoint_max_violation': 0.0548, 'aprime_value': 11.7834, 'aprime_negative_probs': 0, 'aprime_max_mass_error': 3.58808e-07}, {'barrier': 'none', 'zmax': None, 'fourpoint_value': 10.7596, 'fourpoint_violations': 43930, 'fourpoint_max_violation': 0.0612, 'aprime_value': 11.7863, 'aprime_negative_probs': 0, 'aprime_max_mass_error': 3.58791e-07}]}
+11:40:15 phase 3/4: V13 eta=0.3 American put under Route A', by barrier width (total=16)
+11:47:00 result phase3_V13_american = {'values_by_barrier': {'0.84 sd (4-point limit)': {8: 11.76809, 16: 11.7303, 32: 11.7181, 64: 11.71697}, '2.38 sd (9-point limit)': {8: 11.77202, 16: 11.75123, 32: 11.77647, 64: 11.83513}, '3.00 sd': {8: 11.77204, 16: 11.75189, 32: 11.78339, 64: 11.86118}, 'none': {8: 11.77204, 16: 11.75199, 32: 11.78629, 64: 11.88542}}, 'spread_across_barriers': {8: 0.00395, 16: 0.02169, 32: 0.06819, 64: 0.16845}}
+11:47:00 phase 4/4: V9  European: Route A' vs Monte-Carlo of the TRUE rough model (total=6)
+11:47:09 result mc_eta0_control = [11.849, 0.0658]
+11:47:26 result mc_true_rough_european = [11.7309, 0.0482]
+11:53:14 result phase4_V9_covariance_gap = {'mc_eta0_control': [11.849, 0.0658], 'black_scholes_eta0': 11.9235, 'mc_true_rough': [11.7309, 0.0482], 'rows': [{'n': 8, 'tree': 11.7714, 'gap': 0.0405}, {'n': 16, 'tree': 11.7517, 'gap': 0.0208}, {'n': 32, 'tree': 11.7861, 'gap': 0.0553}, {'n': 64, 'tree': 11.8854, 'gap': 0.1545}]}
+11:53:14 wrote RESULTS.md
+11:53:14 done in 13m04s

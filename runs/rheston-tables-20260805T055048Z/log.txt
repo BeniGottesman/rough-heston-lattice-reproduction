@@ -1,0 +1,59 @@
+05:50:48 start rheston-tables pid=38522
+05:50:48 phase 1/5: 1. anchor at H=0.5 against the analytical Heston prices ADS publish (total=46)
+05:51:10 result anchor_fourier_mean_abs_err = 2.8802122724513264e-05
+05:51:10 result anchor_fourier_max_abs_err = 9.17358263876622e-05
+05:51:10 result anchor_mc_mean_abs_err = 0.0012828897422221535
+05:51:10 result anchor_mc_max_abs_err = 0.004038900299999426
+05:51:10 phase 1 took 22s (22.04s)
+05:51:10 phase 2/5: 2. European put and call across H: Fourier vs Monte-Carlo (total=180)
+05:52:41 result eu_put_mean_err_H0.05 = 0.020107636661682075
+05:52:41 result eu_put_max_abs_err_H0.05 = 0.060888403649222766
+05:52:41 result eu_time_fourier_H0.05 = 1.1267426013946533
+05:52:41 result eu_time_mc_H0.05 = 21.388561964035034
+05:52:41 result eu_put_mean_err_H0.1 = 0.014239062721945842
+05:52:41 result eu_put_max_abs_err_H0.1 = 0.043459349671733705
+05:52:41 result eu_time_fourier_H0.1 = 1.0916399955749512
+05:52:41 result eu_time_mc_H0.1 = 21.677668809890747
+05:52:41 result eu_put_mean_err_H0.3 = 0.002547372993568725
+05:52:41 result eu_put_max_abs_err_H0.3 = 0.00981321151829917
+05:52:41 result eu_time_fourier_H0.3 = 1.098886489868164
+05:52:41 result eu_time_mc_H0.3 = 21.596594095230103
+05:52:41 result eu_put_mean_err_H0.5 = -0.0007968043009585615
+05:52:41 result eu_put_max_abs_err_H0.5 = 0.004019862649077055
+05:52:41 result eu_time_fourier_H0.5 = 0.8947639465332031
+05:52:41 result eu_time_mc_H0.5 = 21.515506982803345
+05:52:41 phase 2 took 1m30s (90.46s)
+05:52:41 phase 3/5: 3-4. American put by LSM, and the American-call control (total=144)
+05:54:58 result am_premium_mean_H0.05 = 0.2261005639139898
+05:54:58 result am_premium_max_H0.05 = 0.8147018781703519
+05:54:58 result am_time_mc_H0.05 = 33.31970572471619
+05:54:58 result am_premium_mean_H0.1 = 0.22067207469120065
+05:54:58 result am_premium_max_H0.1 = 0.8133682673390403
+05:54:58 result am_time_mc_H0.1 = 33.560123920440674
+05:54:58 result am_premium_mean_H0.3 = 0.2068744415699544
+05:54:58 result am_premium_max_H0.3 = 0.8080193024496403
+05:54:58 result am_time_mc_H0.3 = 33.33321404457092
+05:54:58 result am_premium_mean_H0.5 = 0.1997857713714807
+05:54:58 result am_premium_max_H0.5 = 0.7954570906366705
+05:54:58 result am_time_mc_H0.5 = 33.38047480583191
+05:54:58 result lsm_call_gap_mean_H0.05 = -0.008716813816876424
+05:54:58 result lsm_call_gap_worst_H0.05 = -0.12946016125679627
+05:54:58 result lsm_call_gap_mean_H0.1 = -0.013306095647999295
+05:54:58 result lsm_call_gap_worst_H0.1 = -0.12288365643483168
+05:54:58 result lsm_call_gap_mean_H0.3 = -0.01952635199702431
+05:54:58 result lsm_call_gap_worst_H0.3 = -0.12159360526478125
+05:54:58 result lsm_call_gap_mean_H0.5 = -0.023452689292719337
+05:54:58 result lsm_call_gap_worst_H0.5 = -0.140805703136353
+05:54:58 phase 3 took 2m17s (137.07s)
+05:54:58 phase 4/5: 5. the Euler--Volterra bias: refine the steps at fixed paths (total=16)
+05:56:28 result bias_first_H0.05 = 0.039907970788352176
+05:56:28 result bias_last_H0.05 = 0.023847991488351816
+05:56:28 result bias_first_H0.1 = 0.030583705199824562
+05:56:28 result bias_last_H0.1 = 0.020333101999824743
+05:56:28 result bias_first_H0.3 = 0.010677948068451237
+05:56:28 result bias_last_H0.3 = 0.014400757993450974
+05:56:28 result bias_first_H0.5 = 0.004260618915340797
+05:56:28 result bias_last_H0.5 = 0.013151341540341033
+05:56:28 wrote RESULTS.md
+05:56:28 phase 4 took 1m30s (90.28s)
+05:56:28 done in 5m39s (339.86s)

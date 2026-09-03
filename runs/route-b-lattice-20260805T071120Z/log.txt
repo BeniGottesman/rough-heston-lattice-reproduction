@@ -1,0 +1,31 @@
+07:11:20 start route-b-lattice pid=44188
+07:11:20 phase 1/6: recombination of the lifted factor (total=1)
+07:11:20 result unrounded_factor_recombines_only_at_s_zero = True
+07:11:20 result state_counts_s2_k12 = 4096
+07:11:20 phase 1 took 0s (0.01s)
+07:11:20 phase 2/6: the lift's structure: w_i sd_i stays O(1) (total=4)
+07:11:21 result w_sd_products_stay_O1 = {'n8m1': 0.6317, 'n8m2': 0.0744, 'n8m3': 0.0073, 'n16m1': 0.6782, 'n16m2': 0.1003, 'n32m1': 0.7166, 'n32m2': 0.1265, 'n64m1': 0.7475}
+07:11:21 phase 2 took 1s (1.37s)
+07:11:21 phase 3/6: implementation controls (total=10)
+07:12:11 result control_eta0_max_m_spread = 3.552713678800501e-15
+07:12:11 result control_eta0_max_gap_to_existing_code = 8.231623382926045e-09
+07:12:24 result control_dp_vs_mc_worst_sigma = 1.7
+07:12:24 phase 3 took 1m03s (63.32s)
+07:12:24 phase 4/6: the telescope, measured (total=4)
+07:13:05 result continuous_reference = 11.78435
+07:13:05 result continuous_reference_stderr = 0.003585
+07:14:55 result skipped_for_memory = []
+07:14:55 result telescope = [{'n': 8, 'mref': 4, 'exact': 11.764980797057646, 'exact_se': 0.0029149280441721367, 'onestep': 11.771284772118356, 'onestep_se': 0.0034408707965412123, 'price_scheme_err': 0.05895681007162068, 'nx': 137, 'lift': {'1': 11.766727, '2': 11.76888, '3': 11.768948}, 'sec': {'1': 0.013347, '2': 0.401916, '3': 36.539878}, 'S': {'1': 45, '2': 1617, '3': 78375}}, {'n': 16, 'mref': 6, 'exact': 11.735066060258664, 'exact_se': 0.0026972243472386075, 'onestep': 11.757923962948345, 'onestep_se': 0.0038620050212596346, 'price_scheme_err': 0.029058566557500498, 'nx': 289, 'lift': {'1': 11.725352, '2': 11.72994}, 'sec': {'1': 0.079611, '2': 4.685717}, 'S': {'1': 67, '2': 4025}}, {'n': 32, 'mref': 8, 'exact': 11.719800356364274, 'exact_se': 0.002677601315577489, 'onestep': 11.784282913958634, 'onestep_se': 0.004746032916253402, 'price_scheme_err': 0.016483006306945214, 'nx': 545, 'lift': {'1': 11.709333, '2': 11.716592}, 'sec': {'1': 0.398783, '2': 51.385797}, 'S': {'1': 99, '2': 9633}}, {'n': 64, 'mref': 12, 'exact': 11.71857738266708, 'exact_se': 0.0026761816780083315, 'onestep': 11.869028812813264, 'onestep_se': 0.005829339332106903, 'price_scheme_err': 0.007737567751814112, 'nx': 1153, 'lift': {'1': 11.701588}, 'sec': {'1': 2.611322}, 'S': {'1': 145}}]
+07:14:55 phase 4 took 2m30s (150.92s)
+07:14:55 phase 5/6: the two new knobs (total=2)
+07:15:04 result knob_max_sensitivity = 0.001696334831780888
+07:15:04 phase 5 took 8s (8.32s)
+07:15:04 phase 6/6: cost (total=1)
+07:15:04 result price_axis_exponent = 1.013
+07:15:04 result state_exponent_drift_of_w_sd_products = {'1': 0.081, '2': 0.383}
+07:15:04 result cost_exponent_m1_eps = 43
+07:15:04 result cost_exponent_m2_eps = 54
+07:15:04 result state_exponent_fits = {'1': {'factors': 0.563, 'total': 1.576}, '2': {'factors': 1.287, 'total': 2.283}}
+07:15:04 wrote RESULTS.md
+07:15:04 phase 6 took 0s (0.01s)
+07:15:04 done in 3m43s (223.95s)

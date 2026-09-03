@@ -1,0 +1,35 @@
+06:17:03 start heston-ads-lattice pid=40318
+06:17:03 phase 1/4: 1. European put and call: our lattice vs ADS's tree vs analytic (total=180)
+06:17:03 result time_lattice_european_n25 = 0.45439600944519043
+06:17:07 result time_lattice_european_n50 = 3.8337390422821045
+06:17:52 result time_lattice_european_n100 = 44.88564205169678
+06:26:29 result time_lattice_european_n200 = 517.0116512775421
+06:26:29 result eu_put_mean_abs_err_ours_n200 = 0.0457313944042223
+06:26:29 result eu_put_max_abs_err_ours_n200 = 0.26446047861499977
+06:26:29 result eu_put_mean_abs_err_ads_n500 = 0.0017644444444445202
+06:26:29 result eu_put_max_abs_err_ads_n500 = 0.006300000000000416
+06:26:29 result eu_call_mean_abs_err_ours_n200 = 0.06881099988964451
+06:26:29 result eu_call_mean_abs_err_ads_n500 = 0.0017733333333332824
+06:26:29 phase 1 took 9m26s (566.19s)
+06:26:29 phase 2/4: 2. American put: lattice, LSM, and two published references (total=5)
+06:26:29 result time_lattice_american_n25 = 0.45304393768310547
+06:26:33 result time_lattice_american_n50 = 4.0826170444488525
+06:27:16 result time_lattice_american_n100 = 42.98472189903259
+06:35:28 result time_lattice_american_n200 = 491.919065952301
+06:35:56 result time_lsm_american = 27.90314793586731
+06:35:56 result am_put_mean_err_lattice_vs_cv = -0.0402294746686668
+06:35:56 result am_put_mean_abs_err_lattice_vs_cv = 0.040633747053111076
+06:35:56 result am_put_mean_err_lsm_vs_cv = -0.016113280208333438
+06:35:56 result am_put_mean_bracket_width = -0.024116194460333355
+06:35:56 phase 2 took 9m27s (567.36s)
+06:35:56 phase 3/4: 3. the American-call control (total=1)
+06:35:56 result am_call_control_max_gap_n25 = 0.0
+06:35:56 result am_call_control_max_gap_n50 = 0.0
+06:35:56 result am_call_control_max_gap_n100 = 0.0
+06:35:56 result am_call_control_max_gap_n200 = 0.0
+06:35:56 phase 3 took 0s (0.00s)
+06:35:56 phase 4/4: 4. convergence: the order in delta (total=5)
+06:46:40 result fitted_order_mean = 0.8941290046112161
+06:46:40 wrote RESULTS.md
+06:46:40 phase 4 took 10m44s (644.20s)
+06:46:40 done in 29m37s (1777.75s)

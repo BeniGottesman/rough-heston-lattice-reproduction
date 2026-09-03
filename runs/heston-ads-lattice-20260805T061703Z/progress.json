@@ -1,0 +1,89 @@
+{
+  "name": "heston-ads-lattice",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/heston-ads-lattice-20260805T061703Z",
+  "status": "done",
+  "pid": 40318,
+  "phase_index": 0,
+  "total_phases": 4,
+  "phase": "4. convergence: the order in delta",
+  "step": 5,
+  "total": 5,
+  "pct": 100.0,
+  "elapsed_s": 1777.7,
+  "elapsed_human": "29m37s",
+  "eta_s": 7111.0,
+  "eta_human": "1h58m",
+  "started_at": "2026-08-05T06:17:03Z",
+  "updated_at": "2026-08-05T06:46:40Z",
+  "meta": {
+    "why_H_is_0.5_only": "rough Heston is outside the paper's model class (autonomous driver required); h=0 is where the class and the semi-analytic models meet",
+    "n_values": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "barrier_sd": 5.0,
+    "mref_rule": "max(4, ceil(4 sqrt(n/8)))",
+    "drift_regularisation": "clip the probabilities",
+    "references": "ADS2014 Tables 1-3 + Beliaeva-Nawalkha control variate"
+  },
+  "timings": [
+    {
+      "phase": "1. European put and call: our lattice vs ADS's tree vs analytic",
+      "index": 1,
+      "seconds": 566.19,
+      "human": "9m26s"
+    },
+    {
+      "phase": "2. American put: lattice, LSM, and two published references",
+      "index": 2,
+      "seconds": 567.36,
+      "human": "9m27s"
+    },
+    {
+      "phase": "3. the American-call control",
+      "index": 3,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "4. convergence: the order in delta",
+      "index": 4,
+      "seconds": 644.2,
+      "human": "10m44s"
+    }
+  ],
+  "phase_elapsed_s": 644.2,
+  "phase_elapsed_human": "10m44s",
+  "partial": {},
+  "results": {
+    "time_lattice_european_n25": 0.45439600944519043,
+    "time_lattice_european_n50": 3.8337390422821045,
+    "time_lattice_european_n100": 44.88564205169678,
+    "time_lattice_european_n200": 517.0116512775421,
+    "eu_put_mean_abs_err_ours_n200": 0.0457313944042223,
+    "eu_put_max_abs_err_ours_n200": 0.26446047861499977,
+    "eu_put_mean_abs_err_ads_n500": 0.0017644444444445202,
+    "eu_put_max_abs_err_ads_n500": 0.006300000000000416,
+    "eu_call_mean_abs_err_ours_n200": 0.06881099988964451,
+    "eu_call_mean_abs_err_ads_n500": 0.0017733333333332824,
+    "time_lattice_american_n25": 0.45304393768310547,
+    "time_lattice_american_n50": 4.0826170444488525,
+    "time_lattice_american_n100": 42.98472189903259,
+    "time_lattice_american_n200": 491.919065952301,
+    "time_lsm_american": 27.90314793586731,
+    "am_put_mean_err_lattice_vs_cv": -0.0402294746686668,
+    "am_put_mean_abs_err_lattice_vs_cv": 0.040633747053111076,
+    "am_put_mean_err_lsm_vs_cv": -0.016113280208333438,
+    "am_put_mean_bracket_width": -0.024116194460333355,
+    "am_call_control_max_gap_n25": 0.0,
+    "am_call_control_max_gap_n50": 0.0,
+    "am_call_control_max_gap_n100": 0.0,
+    "am_call_control_max_gap_n200": 0.0,
+    "fitted_order_mean": 0.8941290046112161,
+    "_total_seconds": 1777.75,
+    "_total_human": "29m37s"
+  },
+  "error": null
+}

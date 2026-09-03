@@ -1,0 +1,98 @@
+{
+  "name": "exit-stability",
+  "run_dir": "/Users/benjamin.g/Projects/rough_volatility_option_pricing_project/runs/exit-stability-20260805T080943Z",
+  "status": "done",
+  "pid": 47914,
+  "phase_index": 0,
+  "total_phases": 6,
+  "phase": "the margin in gamma",
+  "step": 1,
+  "total": 1,
+  "pct": 100.0,
+  "elapsed_s": 205.0,
+  "elapsed_human": "3m24s",
+  "eta_s": 1229.9,
+  "eta_human": "20m29s",
+  "started_at": "2026-08-05T08:09:43Z",
+  "updated_at": "2026-08-05T08:13:08Z",
+  "meta": {
+    "sigma_y": "1.0 + 0.5 sin(y)",
+    "mu_y": "0.3 cos(y)",
+    "y0": 0.4,
+    "rho": -0.7,
+    "sigma_min": 0.5,
+    "sigma_max": 1.5,
+    "sbar": 1.1947091711543252,
+    "paths": 20000,
+    "du": 0.0002,
+    "deltas": [
+      0.0625,
+      0.015625,
+      0.00390625,
+      0.0009765625,
+      0.000244140625
+    ]
+  },
+  "timings": [
+    {
+      "phase": "the coupling is valid",
+      "index": 1,
+      "seconds": 53.43,
+      "human": "53s"
+    },
+    {
+      "phase": "the two rates, and the input",
+      "index": 2,
+      "seconds": 49.67,
+      "human": "50s"
+    },
+    {
+      "phase": "the input: the coefficient perturbation",
+      "index": 3,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "the exit positions coincide",
+      "index": 4,
+      "seconds": 0.0,
+      "human": "0s"
+    },
+    {
+      "phase": "the drift, paired",
+      "index": 5,
+      "seconds": 101.87,
+      "human": "1m41s"
+    },
+    {
+      "phase": "the margin in gamma",
+      "index": 6,
+      "seconds": 0.0,
+      "human": "0s"
+    }
+  ],
+  "phase_elapsed_s": 0.0,
+  "phase_elapsed_human": "0s",
+  "partial": {
+    "inner": "paired delta=9.77e-04 done"
+  },
+  "results": {
+    "dds_identity_bias_over_sqrt_du": [
+      1.027,
+      0.807,
+      0.835
+    ],
+    "dds_identity_finest_bias_sigma": 1.43,
+    "slope_L2_dnu": 0.5013,
+    "slope_L2_dw": 0.27,
+    "slope_L2_dw_perp": 0.2641,
+    "slope_sigma_deviation": 0.4976,
+    "max_exit_position_mismatch": 0.0,
+    "drift_paired_worst_abs_t": 0.81,
+    "drift_effect_constant_bound_over_sqrt_delta": 0.0127,
+    "gamma_margin_at_H_0.1": 0.2,
+    "_total_seconds": 204.98,
+    "_total_human": "3m24s"
+  },
+  "error": null
+}

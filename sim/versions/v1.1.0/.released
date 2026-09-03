@@ -1,0 +1,2 @@
+2026-08-05T11:48:37Z
+superseded by v1.1.1: route_b._nnls_weights: survive nnls non-convergence at large m (no numerical change to any converging case)

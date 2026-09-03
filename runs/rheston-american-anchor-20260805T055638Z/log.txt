@@ -1,0 +1,13 @@
+05:56:38 start rheston-american-anchor pid=38718
+05:56:38 phase 1/2: 1. American put at H=0.5 against two published references (total=37)
+05:57:13 result am_anchor_mean_gap = -0.02091883576388893
+05:57:13 result am_anchor_mean_abs_gap = 0.020980518625000034
+05:57:13 result am_anchor_mean_abs_gap_pct = 0.634724419385326
+05:57:13 result am_anchor_worst_gap = -0.05894148989999959
+05:57:13 result am_anchor_time_mc = 34.32448601722717
+05:57:13 result am_anchor_mean_abs_gap_interior = 0.0222146667794118
+05:57:13 phase 1 took 35s (34.68s)
+05:57:13 phase 2/2: 2. does the gap come from the exercise grid? (total=3)
+05:57:18 wrote RESULTS.md
+05:57:18 phase 2 took 6s (5.75s)
+05:57:18 done in 40s (40.43s)
